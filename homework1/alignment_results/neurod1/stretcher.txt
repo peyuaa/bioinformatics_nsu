@@ -1,0 +1,1023 @@
+########################################
+# Program: stretcher
+# Rundate: Sun 31 Mar 2024 15:48:21
+# Commandline: stretcher
+#    -auto
+#    -stdout
+#    -asequence emboss_stretcher-I20240331-154808-0739-85478286-p1m.asequence
+#    -bsequence emboss_stretcher-I20240331-154808-0739-85478286-p1m.bsequence
+#    -datafile EBLOSUM62
+#    -gapopen 12
+#    -gapextend 2
+#    -aformat3 pair
+#    -sprotein1
+#    -sprotein2
+# Align_format: pair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: c181680517-181668295
+# 2: c84770454-84766483
+# Matrix: EBLOSUM62
+# Gap_penalty: 12
+# Extend_penalty: 2
+#
+# Length: 12291
+# Identity:    3351/12291 (27.3%)
+# Similarity:  3351/12291 (27.3%)
+# Gaps:        8387/12291 (68.2%)
+# Score: 1508
+# 
+#
+#=======================================
+
+c181680517-18      1 ACGAGGAATTCGCCCACGCAGGAGGCGCGGCGTCCGGAGGCCCCAGGGTT     50
+                               |||||||||||.||||..||.||||.|||||.||||||||
+c84770454-847      1 ----------CGCCCACGCAGAAGGCAAGGTGTCCCGAGGCTCCAGGGTT     40
+
+c181680517-18     51 ATGAGACTATCACTGCTCAGGACCTACTAACAACAAAGGTAATTACAGTT    100
+                     ||||||...|||||..||||.||||..|||||||  ||||||||||..||
+c84770454-847     41 ATGAGATCGTCACTATTCAGAACCTTTTAACAAC--AGGTAATTACGATT     88
+
+c181680517-18    101 CTTTCATTTTTTTGCCCC-AGAATAGAAGCAATAACTGAAGACTGATGAA    149
+                     |.|...||||.||..||| ||||||.|||||||||.||||||  |.||.|
+c84770454-847     89 CCTATTTTTTATTCTCCCGAGAATAAAAGCAATAATTGAAGA--GCTGTA    136
+
+c181680517-18    150 CCTACATATTCTGTATGTGTGCGTTTGCGAGAGT---GTGTATGTGTATT    196
+                     |||...||.|.||.|||||..|.||...| ||||   .|||...|.||||
+c84770454-847    137 CCTTGGTACTTTGCATGTGCACATTCATG-GAGTCAGTTGTCCCTATATT    185
+
+c181680517-18    197 -GAGACCAGCATCCCCCTCCATAATTGCCCATAAGTACTCACACATAATG    245
+                      |||||..|..||||.|....||||||||||.||||||||.|||||||||
+c84770454-847    186 TGAGACTGGTGTCCCTCCTTGTAATTGCCCACAAGTACTCGCACATAATG    235
+
+c181680517-18    246 AGTCGTGTCACTCAAGTACCCCCTGCAGGCTTTCTAATTTAAATTTTAAA    295
+                     ||||....|||||||||||||||||||||||||||||||..|.||     
+c84770454-847    236 AGTCCCAGCACTCAAGTACCCCCTGCAGGCTTTCTAATTACATTT-----    280
+
+c181680517-18    296 AATTTGGGTTTCTTTTGTGGATAGCATAGGAGCTTCTTGGATTTTTTAAA    345
+                     |||||            |..||||.||||.|||||.|.|.||.|||    
+c84770454-847    281 AATTT------------TTAATAGTATAGAAGCTTTTAGAATGTTT----    314
+
+c181680517-18    346 AGAATGCACGGTAACTATGATTATCTGCTAGTGCTGATTTTAAAGTCCCA    395
+                     .|...|....||||||.|.|||||.||..||.|.|.||||.||||||||.
+c84770454-847    315 GGGGAGGGGAGTAACTGTAATTATTTGTAAGCGGTTATTTGAAAGTCCCC    364
+
+c181680517-18    396 AAAGCAAT-AATGACTTCACTTTCTCACTTCTTACAGT------AAGAAA    438
+                     |||||||. ||..||||||..|||||||||.||.|||.      ||||..
+c84770454-847    365 AAAGCAAACAACCACTTCAAGTTCTCACTTATTCCAGAGAGGCAAAGAGG    414
+
+c181680517-18    439 AAAAAATCTA-TGTTATCAATA--TATATTTTGTGTGCATGTATTTT-AC    484
+                     ||||||.|.. ||.|..|.|.|  |.|||||.||||.||..|||||. ||
+c84770454-847    415 AAAAAAGCACCTGCTGCCCAGAGTTTTATTTGGTGTACAGATATTTAGAC    464
+
+c181680517-18    485 GCACATTGGGAGTGTCAAGCTGTGTTTTCAGTGAATGAAAGGGACATGGA    534
+                     ||||  ||.|..|.|   |...||.||.|||       .|||   ||||.
+c84770454-847    465 GCAC--TGTGCATAT---GAGATGATTCCAG-------GAGG---ATGGG    499
+
+c181680517-18    535 TACCTTGAGTATTCACACCATGGAAAATAAATCAGGT-TCAGAGATAGTT    583
+                     ...||.|.||       ||  ||||||.....|.|.. ||.|||||.|.|
+c84770454-847    500 GTACTCGCGT-------CC--GGAAAAACTGGCTGAACTCTGAGATGGCT    540
+
+c181680517-18    584 TAGTTGAGAGGGGGGAAAGTGGAGAAAGGGAGAGGGACTCACTCCTGCTA    633
+                     |||..||.|.|..| ||||.||.|.|  |.|.|||.|.....|.||||||
+c84770454-847    541 TAGCGGAAATGTAG-AAAGAGGGGGA--GAAAAGGAAGATTTTTCTGCTA    587
+
+c181680517-18    634 CCTGTTACCGCTCCAGAGGCGGCCAAGTCCCCAGCAGCCACTACTGGAGC    683
+                     ||||||||.||.||||||||.|||||||||.|.|.||||.||.||||.||
+c84770454-847    588 CCTGTTACTGCCCCAGAGGCAGCCAAGTCCTCGGTAGCCTCTGCTGGGGC    637
+
+c181680517-18    684 CAGAAATTCAGTTGTTTTACTAAAGGCTTTTTATTTTCCTTACTAGAAGC    733
+                     .|||.|||||.||||||||||||||||||||||...||||||.|||||||
+c84770454-847    638 TAGACATTCAATTGTTTTACTAAAGGCTTTTTACAGTCCTTATTAGAAGC    687
+
+c181680517-18    734 GGCAACTTCGCGGTTGCCAATCGCTGACCATTATAATTACTCAATCTTTT    783
+                     ||||.||||.|..||||||.||||||||||||.|||||||||.|||||||
+c84770454-847    688 GGCACCTTCACCATTGCCAGTCGCTGACCATTGTAATTACTCCATCTTTT    737
+
+c181680517-18    784 AAAGGGAGGTTTGAGGCGAACTTTGAAAAGCCCCAATAAAGAGCGGGCGG    833
+                     ||||.||||||||||||||||||||||||||.||||||||||||||||||
+c84770454-847    738 AAAGCGAGGTTTGAGGCGAACTTTGAAAAGCTCCAATAAAGAGCGGGCGG    787
+
+c181680517-18    834 CCCTTTCAATGGGCTGTTTATTAGAGAGGAGCCTTCCGCACCTGATCCCC    883
+                     |||||||||||||||||||||||||||||||||||..|||||||||||||
+c84770454-847    788 CCCTTTCAATGGGCTGTTTATTAGAGAGGAGCCTTTTGCACCTGATCCCC    837
+
+c181680517-18    884 GGCGCGTGGGAGAGCGCTCTGCGCCGCGCCCCCAGCCCTCGCCCTGCAGC    933
+                     .||||||||||||||                      ||||||..|.|||
+c84770454-847    838 AGCGCGTGGGAGAGC----------------------CTCGCCTGGGAGC    865
+
+c181680517-18    934 TAGCGCTTTTGTACAAGGTGGAAATTTAGCGGTGG----GCCAGAGATGG    979
+                     .||.|||||||||||||||||.||||||||||.||    |.|.|.|..|.
+c84770454-847    866 CAGAGCTTTTGTACAAGGTGGGAATTTAGCGGGGGTGGGGGCGGGGGGGT    915
+
+c181680517-18    980 AAGGCAAGAAAAGAAAGGCGAGGGAGGGGTGGAAGAC-CCTGTCCACTTT   1028
+                     .||.||||.||||||||||.||||||||.|||||||| ..||.||||||.
+c84770454-847    916 GAGACAAGGAAAGAAAGGCAAGGGAGGGATGGAAGACGTATGCCCACTTC    965
+
+c181680517-18   1029 TGTTGCCAAATGTTACATTGATGGTGAAACAATTTGGTGGAAACTATTTT   1078
+                     |||.|||||||||..|.|||.|||.||||.||||.|||||||.|||.|||
+c84770454-847    966 TGTGGCCAAATGTGTCGTTGGTGGGGAAATAATTCGGTGGAATCTACTTT   1015
+
+c181680517-18   1079 TCCTCCTTTCTGCATTTGCTTTTCAGTATCCCGTCGATGTAATCTTCTTA   1128
+                     |||||||...||||.|.|||       .||||.||..|.|||||||||||
+c84770454-847   1016 TCCTCCTCCGTGCACTGGCT-------CTCCCTTCTGTATAATCTTCTTA   1058
+
+c181680517-18   1129 AAAATCGCTGCCAGTATTAGTAAATTACGCAATGGCTGTTCA----ACTT   1174
+                     |||||||..|.||||.|||||||||||||.|||||||.||||    |.||
+c84770454-847   1059 AAAATCGGGGTCAGTGTTAGTAAATTACGTAATGGCTTTTCACTTTATTT   1108
+
+c181680517-18   1175 AAATCGCTAAGTATCTGGAAGCCAGGACAGAAATGGAAGTAGAATGTGTG   1224
+                     |||.|.|||||||...|.|||||||.|||||.|||.....||||.|| |.
+c84770454-847   1109 AAACCTCTAAGTAGTGGAAAGCCAGAACAGAGATGAGTTCAGAACGT-TC   1157
+
+c181680517-18   1225 ATTTTACAGCTTTTTTTTTTTTTTATGGAGTTGTGAGTAACTTTGAACAC   1274
+                     ..|||.||........||||||||.|| |||||.||||.||||.|.||.|
+c84770454-847   1158 CATTTCCAAACACACCTTTTTTTTGTG-AGTTGGGAGTGACTTGGGACGC   1206
+
+c181680517-18   1275 ATTTGGATAAACATGAAGTCGCTGAAATGTACAGTCATTTCCACACACAT   1324
+                     |||..||.||||.||.|  |.|||       ||.|.|||||.|||.|...
+c84770454-847   1207 ATTCAGAAAAACGTGCA--CTCTG-------CACTTATTTCTACAGAGGG   1247
+
+c181680517-18   1325 TATCCTGTCGGGCAACCACCATAAACACATTTAAGTTAATCACTAGGATA   1374
+                     ||.|..|.|.|.|||...||...||||||.|||||.|.|||||||||| |
+c84770454-847   1248 TACCTGGCCAGACAATTGCCCAGAACACAGTTAAGCTGATCACTAGGA-A   1296
+
+c181680517-18   1375 CAAACACATATGCGTGAGTGGTGTACACATATACATATTCACTACCCTCC   1424
+                     .|.||.|||| ||            |||          ||||.||...||
+c84770454-847   1297 GACACCCATA-GC------------CAC----------TCACGACAAGCC   1323
+
+c181680517-18   1425 CCCAGTCCTGTCCTCACTCCTACGTACTAGCGGGGCACACGCACGCGCCA   1474
+                     |  |||..|||||.     .||||.|..||||.||||||..|||||  ||
+c84770454-847   1324 C--AGTGATGTCCA-----GTACGCAGCAGCGAGGCACAGACACGC--CA   1364
+
+c181680517-18   1475 TTATAAAACACTGCATTTAACTTT-----TTCTCAGAGGCATTCATTTTG   1519
+                     ..||.||.|.||||.|||||||||     |||..||||||||.|||||||
+c84770454-847   1365 GCATGAAGCGCTGCGTTTAACTTTAACTTTTCCTAGAGGCATCCATTTTG   1414
+
+c181680517-18   1520 TAATGGGCA----GGTA---CTTTTCGCAAGCATTTGTACAGGTTTAGGG   1562
+                     .||.|..|.    .|||   ||.||.|...||||||.|..|||.|.||||
+c84770454-847   1415 CAAGGAACTCCTGTGTATTTCTATTTGTGTGCATTTCTGTAGGATGAGGG   1464
+
+c181680517-18   1563 AGTGGAAGCTGAAGGCGTATCTGGCTTTTGAATATAGC--GT-----TTT   1605
+                     ||.||.||||||||.|.||||..||||||.|.||||||  ||     |||
+c84770454-847   1465 AGAGGGAGCTGAAGACTTATCCAGCTTTTAACTATAGCTGGTGGATATTT   1514
+
+c181680517-18   1606 TCTG-CTTT--TCTTTCTGTTTGCCTCTC-CCTTGTTGAATGTAGGAAAT   1651
+                     |||. ||||  ||||||||.||||||||. ||.||||||||..|||||.|
+c84770454-847   1515 TCTTTCTTTCCTCTTTCTGCTTGCCTCTTTCCCTGTTGAATACAGGAAGT   1564
+
+c181680517-18   1652 CGAAACATGACCAAATCGTACAGCGAGAGTGGGCTGATGGGCGAGCCTCA   1701
+                     .||||||||||||||||.|||||||||||.||||||||||||||||||||
+c84770454-847   1565 GGAAACATGACCAAATCATACAGCGAGAGCGGGCTGATGGGCGAGCCTCA   1614
+
+c181680517-18   1702 GCCCCAAGGTCCTCCAAGCTGGACAGACGAGTGTCTCAGTTCTCAGGACG   1751
+                     ||||||||||||.||||||||||||||||||||.||||||||||||||||
+c84770454-847   1615 GCCCCAAGGTCCCCCAAGCTGGACAGACGAGTGCCTCAGTTCTCAGGACG   1664
+
+c181680517-18   1752 AGGAGCACGAGGCAGACAAGAAGGAGGACGACCTCGAAACCATGAACGCA   1801
+                     ||||.|||||||||||||||||||||||.||.||.|||.|||||||.|||
+c84770454-847   1665 AGGAACACGAGGCAGACAAGAAGGAGGATGAGCTTGAAGCCATGAATGCA   1714
+
+c181680517-18   1802 GAGGAGGACTCACTGAGGAACGGGGGAGAGGAGGAGGACGAAGATGAGGA   1851
+                     |||||||||||.|||||.||.|||||||||||||||||.|||||||||||
+c84770454-847   1715 GAGGAGGACTCTCTGAGAAATGGGGGAGAGGAGGAGGATGAAGATGAGGA   1764
+
+c181680517-18   1852 CCTGGAAGAGGAGGAAGAAGAGGAAGAGGAGGATGACGATCAAAAGCCCA   1901
+                     .|||||||||||||||||.|||||.||.|||||.||.|||||||||||||
+c84770454-847   1765 TCTGGAAGAGGAGGAAGAGGAGGAGGAAGAGGAGGATGATCAAAAGCCCA   1814
+
+c181680517-18   1902 AGAGACGCGGCCCCAAAAAGAAGAAGATGACTAAGGCTCGCCTGGAGCGT   1951
+                     |||||||.||||||||||||||.||||||||.|||||.|||||.||||||
+c84770454-847   1815 AGAGACGGGGCCCCAAAAAGAAAAAGATGACCAAGGCGCGCCTAGAGCGT   1864
+
+c181680517-18   1952 TTTAAATTGAGACGCATGAAGGCTAACGCCCGGGAGCGGAACCGCATGCA   2001
+                     ||||||||.||||||||||||||.||.|||||.|||||||||||||||||
+c84770454-847   1865 TTTAAATTAAGACGCATGAAGGCCAATGCCCGCGAGCGGAACCGCATGCA   1914
+
+c181680517-18   2002 CGGACTGAACGCGGCGCTAGACAACCTGCGCAAGGTGGTGCCTTGCTATT   2051
+                     |||.|||||.||||||||.|||||||||.|.||||||||.||.|||||.|
+c84770454-847   1915 CGGGCTGAATGCGGCGCTGGACAACCTGAGAAAGGTGGTACCCTGCTACT   1964
+
+c181680517-18   2052 CTAAGACGCAGAAGCTGTCCAAAATCGAGACTCTGCGCTTGGCCAAGAAC   2101
+                     |||||||.|||||||||||.||.||.|||||.||||||||||||||||||
+c84770454-847   1965 CTAAGACACAGAAGCTGTCTAAGATAGAGACACTGCGCTTGGCCAAGAAC   2014
+
+c181680517-18   2102 TACATCTGGGCTCTGTCGGAGATCCTGCGCTCAGGCAAAAGCCCAGACCT   2151
+                     ||.||||||||||||||.||||||||||||||||||||||||||||||||
+c84770454-847   2015 TATATCTGGGCTCTGTCAGAGATCCTGCGCTCAGGCAAAAGCCCAGACCT   2064
+
+c181680517-18   2152 GGTCTCCTTCGTTCAGACGCTTTGCAAGGGCTTATCCCAACCCACCACCA   2201
+                     .||||||||.||.|||||.||.|||||.||.||.|||||.|||||.||||
+c84770454-847   2065 CGTCTCCTTTGTACAGACACTCTGCAAAGGTTTGTCCCAGCCCACTACCA   2114
+
+c181680517-18   2202 ACCTGGTTGCGGGCTGCCTGCAACTCAATCCTCGGACTTTTCTGCCTGAG   2251
+                     |..||||.||.||||||.||||.|||||.||.||||||||..||||||||
+c84770454-847   2115 ATTTGGTGGCTGGCTGCTTGCAGCTCAACCCCCGGACTTTCTTGCCTGAG   2164
+
+c181680517-18   2252 CAGAACCAGGACATGCCCCCCCACCTGCCGACGGCCAGCGCTTCCTTCCC   2301
+                     |||||.|.||||||||||||.||||||||.||.|||||||||||||||||
+c84770454-847   2165 CAGAATCCGGACATGCCCCCACACCTGCCAACCGCCAGCGCTTCCTTCCC   2214
+
+c181680517-18   2302 TGTACACCCCTACTCCTACCAGTCGCCTGGGCTGCCCAGTCCGCCTTACG   2351
+                     .||.||.|||||||||||||||||.|||||.||||||||.|||||.||||
+c84770454-847   2215 GGTGCATCCCTACTCCTACCAGTCCCCTGGACTGCCCAGCCCGCCCTACG   2264
+
+c181680517-18   2352 GTACCATGGACAGCTCCCATGTCTTCCACGTTAAGCCTCCGCCGCACGCC   2401
+                     |.|||||||||||||||||||||||||||||.|||||.|||||.||||||
+c84770454-847   2265 GCACCATGGACAGCTCCCATGTCTTCCACGTCAAGCCGCCGCCACACGCC   2314
+
+c181680517-18   2402 TACAGCGCAGCGCTGGAGCCCTTCTTTGAAAGCCCTCTGACTGATTGCAC   2451
+                     |||||||||||.|||||||||||||||||||||||.||.|||||||||||
+c84770454-847   2315 TACAGCGCAGCCCTGGAGCCCTTCTTTGAAAGCCCCCTAACTGATTGCAC   2364
+
+c181680517-18   2452 CAGCCCTTCCTTTGATGGACCCCTCAGCCCGCCGCTCAGCATCAATGGCA   2501
+                     |||||||||||||||.||||||||||||||||||||||||||||||||||
+c84770454-847   2365 CAGCCCTTCCTTTGACGGACCCCTCAGCCCGCCGCTCAGCATCAATGGCA   2414
+
+c181680517-18   2502 ACTTCTCTTTCAAACACGAACCGTCCGCCGAGTTTGAGAAAAATTATGCC   2551
+                     ||||||||||||||||||||||.|||.||||||||||.||||||||||||
+c84770454-847   2415 ACTTCTCTTTCAAACACGAACCATCCACCGAGTTTGAAAAAAATTATGCC   2464
+
+c181680517-18   2552 TTTACCATGCACTATCCTGCAGCGACACTGGCAGGGGCCCAAAGCCACGG   2601
+                     ||||||||||||||.|||||||||||.|||||||||.|||||||||||||
+c84770454-847   2465 TTTACCATGCACTACCCTGCAGCGACCCTGGCAGGGCCCCAAAGCCACGG   2514
+
+c181680517-18   2602 ATCAATCTTCTCA---GGCACCGCTGCCCCTCGCTGCGAGATCCCCATAG   2648
+                     ||||||||||||.   ||..|||||||.||||||||.|||||||||||||
+c84770454-847   2515 ATCAATCTTCTCCTCGGGTGCCGCTGCTCCTCGCTGTGAGATCCCCATAG   2564
+
+c181680517-18   2649 ACAATATTATGTCCTTCGATAGCCATTCACATCATGAGCGAGTCATGAGT   2698
+                     |||||||||||||.||||||||||||||.|||||||||||||||||||||
+c84770454-847   2565 ACAATATTATGTCTTTCGATAGCCATTCGCATCATGAGCGAGTCATGAGT   2614
+
+c181680517-18   2699 GCCCAGCTCAATGCCATATTTCATGATTAGAGGCACGCCAGTTTCACCAT   2748
+                     ||||||||.||||||||.|||||.|||||||||||||.||||||||||||
+c84770454-847   2615 GCCCAGCTTAATGCCATCTTTCACGATTAGAGGCACGTCAGTTTCACCAT   2664
+
+c181680517-18   2749 TTCCGGGAAACGAACCCACTGTGCTTACAGTGACTGTCGTGTTTACAAAA   2798
+                     |.||||||||||||.|||||||||||||||||||||||.||||||||.||
+c84770454-847   2665 TCCCGGGAAACGAATCCACTGTGCTTACAGTGACTGTCCTGTTTACAGAA   2714
+
+c181680517-18   2799 GGCAGCCCTTTGGGTACTACTGCTGCAAAGTGCAAATACTCCAAGCTTCA   2848
+                     |||||||||||.|.||..|.|||||||||||||||||||||.||||||||
+c84770454-847   2715 GGCAGCCCTTTTGATAACATTGCTGCAAAGTGCAAATACTCGAAGCTTCA   2764
+
+c181680517-18   2849 AGTGATATATGTATTTATTGTCATTACTGCCTTTGGAAGAAACAGGGGAT   2898
+                     ||.|||||||||||||||||||.|||||||||||||||||||||||||||
+c84770454-847   2765 AGGGATATATGTATTTATTGTCGTTACTGCCTTTGGAAGAAACAGGGGAT   2814
+
+c181680517-18   2899 CAAAGTTCCTGTTCACCTTATGTATTATTTTCTATAGCTCTTCTATTTAA   2948
+                     |||||||||||||||||||||.||||.|||||||||||||||||||||.|
+c84770454-847   2815 CAAAGTTCCTGTTCACCTTATCTATTGTTTTCTATAGCTCTTCTATTTTA   2864
+
+c181680517-18   2949 AAAATAAAAAAATACAGTAAAGTTTAAAAAATACA------CCACGAATT   2992
+                     |||| |.||.|.|||||||||||..||||...|.|      |||||||||
+c84770454-847   2865 AAAA-ATAATAGTACAGTAAAGTAAAAAAGGAAAATGTGTACCACGAATT   2913
+
+c181680517-18   2993 TGGTGTGGCTGTATTCAGATCGTATTAATTATCTGATCGGGATAACAAAA   3042
+                     |.||||.||||||||||||||||||||||||||||||||||||||.||||
+c84770454-847   2914 TCGTGTAGCTGTATTCAGATCGTATTAATTATCTGATCGGGATAAAAAAA   2963
+
+c181680517-18   3043 TCACAAGCAATAATTAGGATCTATGCAATTTTTAAACTAGTAATGGGCCA   3092
+                     ||  ||||||||||||||||||||||||||||||||||||||||||||||
+c84770454-847   2964 TC--AAGCAATAATTAGGATCTATGCAATTTTTAAACTAGTAATGGGCCA   3011
+
+c181680517-18   3093 ATTAAAATATATATAAATATATATTTTTCAACCAGCATTTTACTACTTGT   3142
+                     ||||||.|||||||||||||||||||||||||||||||||||||||||||
+c84770454-847   3012 ATTAAAGTATATATAAATATATATTTTTCAACCAGCATTTTACTACTTGT   3061
+
+c181680517-18   3143 TACCTTTCCCATGCTGAATTATTTTGTTGTGATTTTGTACAGAATTTTTA   3192
+                     ||||||||||||||.|||||||||||||||||||||||||||||||||||
+c84770454-847   3062 TACCTTTCCCATGCCGAATTATTTTGTTGTGATTTTGTACAGAATTTTTA   3111
+
+c181680517-18   3193 ATGACTTTTTATAATGTGGATTTCCTATTTTAAAACCATGCAGCTTCATC   3242
+                     ||||||||||||||.|||||||||||||||||||||||||||||||||||
+c84770454-847   3112 ATGACTTTTTATAACGTGGATTTCCTATTTTAAAACCATGCAGCTTCATC   3161
+
+c181680517-18   3243 AATTTTTATACATATCAGAAAAGTAGAATTATATCTAATTTATACAAAA-   3291
+                     ||||||||||||||||||||||||||||||||||||||||||||||||| 
+c84770454-847   3162 AATTTTTATACATATCAGAAAAGTAGAATTATATCTAATTTATACAAAAA   3211
+
+c181680517-18   3292 TAATTTAACTAATTTAAACCAGCAGAAAAGTGCTTAGAAAGTTATTGTGT   3341
+                     |||||||||||||||||||||||||||||||||||||||||||||||.||
+c84770454-847   3212 TAATTTAACTAATTTAAACCAGCAGAAAAGTGCTTAGAAAGTTATTGCGT   3261
+
+c181680517-18   3342 TGCCTTAGCACTTCTTTCCTCTCCAATTGTAAAAAAAAAAAAAAAAAAAA   3391
+                     ||||||||||||||||||.||||.|||||||||||||||||||.|.||||
+c84770454-847   3262 TGCCTTAGCACTTCTTTCTTCTCTAATTGTAAAAAAAAAAAAATAGAAAA   3311
+
+c181680517-18   3392 AAAAAAAAAAAAA------ATTGCACAATTTGAGCAATTCATTTCACTTT   3435
+                     .||||.|.|||||      |||||||||||||||||||||||.|||||||
+c84770454-847   3312 GAAAAGAGAAAAACAACAAATTGCACAATTTGAGCAATTCATCTCACTTT   3361
+
+c181680517-18   3436 AAAGTCTTTCCGTCTCCCTAAAATAAAAACCAGAATCATAATTTTCAAGA   3485
+                     |||||||||||.||||||||||.||.||||||||..|||||...||||||
+c84770454-847   3362 AAAGTCTTTCCCTCTCCCTAAAGTAGAAACCAGACCCATAACACTCAAGA   3411
+
+c181680517-18   3486 GAAGAAAAAATTAAGAGATACATTCCCTATCAAAACATATCAATTCAACA   3535
+                     |  |||||||   |||.||.||||||.||||||||||||||.|||||   
+c84770454-847   3412 G--GAAAAAA---AGAAATGCATTCCTTATCAAAACATATCGATTCA---   3453
+
+c181680517-18   3536 CATTACTTGCACAAGCTTGTATATACATATTATAAATAAATGCCAACATA   3585
+                       ||.||||||||.|||||||.|||||||.||||||||||||||||||.|
+c84770454-847   3454 --TTCCTTGCACACGCTTGTAAATACATAATATAAATAAATGCCAACACA   3501
+
+c181680517-18   3586 CCCTTCTTTAAATCAAAAGCTGCTTGACTATCACATACAATTTGCACTGT   3635
+                     |.||.|||||||||||||||||||.|||||||||..||||||||||||.|
+c84770454-847   3502 CACTCCTTTAAATCAAAAGCTGCTCGACTATCACCCACAATTTGCACTCT   3551
+
+c181680517-18   3636 TACTTTTTAGTCTTTTACTCCTTTGCATTCCATGATTTT-ACAGAGAATC   3684
+                     |.|||||||||||||.|||.|||||.|.||.|||||||| |..|||..||
+c84770454-847   3552 TTCTTTTTAGTCTTTCACTTCTTTGAAGTCAATGATTTTTATGGAGTGTC   3601
+
+c181680517-18   3685 TGAAGCTATTGATGTTTCCAGAAAATATAAATGCATGATTTTATACATAG   3734
+                     |||.|.||||||||||||.|||||||||||||||||||||||||||||||
+c84770454-847   3602 TGACGTTATTGATGTTTCGAGAAAATATAAATGCATGATTTTATACATAG   3651
+
+c181680517-18   3735 TCACAAAAATGGTGGTTTGTCATATATTCATGTAATAAATCTGAGCCTAA   3784
+                     |||.|.|||||||||.|||||||.||||||||||||||||||||||||||
+c84770454-847   3652 TCAAACAAATGGTGGCTTGTCATCTATTCATGTAATAAATCTGAGCCTAA   3701
+
+c181680517-18   3785 ATCTAATCAGGTTGTTAATGTTGGGATTTATATCTATAGTAGTCAATTAG   3834
+                     ||.||.||||||||||.||||||||.||||||.||.| ||||||||||||
+c84770454-847   3702 ATTTATTCAGGTTGTTGATGTTGGGGTTTATACCTGT-GTAGTCAATTAG   3750
+
+c181680517-18   3835 TACAGTAGCTTAAATAAA-TTCAAACCATTTAATTCATAATTAGAACAAT   3883
+                     ||||||||.||||||||| ||||||||||.|.||.|||||||||||||||
+c84770454-847   3751 TACAGTAGTTTAAATAAAATTCAAACCATCTGATCCATAATTAGAACAAT   3800
+
+c181680517-18   3884 AGCTATTGCATGTAAAATGCAGTCCAGAATAAGTGCTGTTTGAGATGTGA   3933
+                     ||||||||||||||||||||||||||||||||||||||||||.|||||||
+c84770454-847   3801 AGCTATTGCATGTAAAATGCAGTCCAGAATAAGTGCTGTTTGCGATGTGA   3850
+
+c181680517-18   3934 TGCTGGTACCACTGGAATCGATCTGTACTGTAATTTTGTTTGTAATCCTG   3983
+                     |||||||||.||||||||.||..|||||||||||.|||||.|||||||||
+c84770454-847   3851 TGCTGGTACTACTGGAATGGACATGTACTGTAATCTTGTTCGTAATCCTG   3900
+
+c181680517-18   3984 TATATTATGGTGTAATGCACAATTTAGAAAACATTCATCCAGTTGCAATA   4033
+                     |.||||||||||||||||||||||||||||||..||||.|||||||||||
+c84770454-847   3901 TGTATTATGGTGTAATGCACAATTTAGAAAACTCTCATGCAGTTGCAATA   3950
+
+c181680517-18   4034 AAA-TAGTATTGAAAGTGAGAGCAATTGTTGCATTTCTTCTTAAAGGGAT   4082
+                     ||| |||||||||||                                   
+c84770454-847   3951 AAAATAGTATTGAAA-----------------------------------   3965
+
+c181680517-18   4083 TCTGTTTTTATTTTTGGGGAAAGTAGTTGCTTTTTTGCTGAGTTAAAAAA   4132
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   4133 TACTAAACACTATATGTAGAATAAAAGAAAAGAAAAAAGTTTACCTTGGC   4182
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   4183 ATATGCTCTTGTCTGTTTATCTTGCACAGGGAGTCACCAGTTCTATGTAG   4232
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   4233 ATAATGAAAAGACCTAACTGATATTTCATTATTTGGAATATGGGACTGGA   4282
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   4283 CGGCAGTACAAACAGTGTGTTTTTTTCTTTGTTTTAAGTGGCTTAGCCTT   4332
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   4333 TAGGTTTTTTATTTCCATTTTTAAAAATGATTGTTACATGTTTTCTTCTA   4382
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   4383 TTTCTTTTTTTAAAAGGTGGATTTTAATAATTATTAACAAGCAAGACATA   4432
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   4433 AACAAGTATCCTAGCTTAGTTTGTCTATACATTTAAGATGTATAAAACAT   4482
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   4483 TACTATTTTCTTGGTCTTCTGTTATCTGTACATTTTTCTGAACTAAACAG   4532
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   4533 TTTTATCTTGCAAACTAGTACTGTCCCAGAAAAATTTATACACCTTTAGG   4582
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   4583 AAGTACCAAAGGGAAATGAGTTAATTAATTTAAAGAATCCAAGAGAAGTA   4632
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   4633 ACATTTTATAATTGTTCTATTAACATCTTGTGATGATTTCCATCATTTTT   4682
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   4683 CCAAGAAAAAGCATAATGGATTATTTGTACTGAAGAACACACTATTTGTA   4732
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   4733 CTGTATTTAGGAAGGTGTAATTATTTCCTCCCCCCACCCTTTGGGGCACT   4782
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   4783 ATTCTGTTGTTTCATGAACACAACTCACTGGAAAAACTTATGGATGATTC   4832
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   4833 TGTCTATTGTTAAGTCCACTTCAAAAAAAAAAAAACAGTTTGGCATTTCT   4882
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   4883 TTTCCTCTGGATGTATTGACTGACAGTCATGATTCCTAGGGAATATCATT   4932
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   4933 TTGGCACTTGTGCCCTGGCTCTACTGTGGTGCTCTGATTACTGTCATTAG   4982
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   4983 TAACTCCATTGTTTCTACTCTGATTCGGGTGCCACATTGGATGACTACCC   5032
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   5033 CCCTTCCCAAGCTTGTTCCTTTAATCTCCTTCTCATTGGTGATTTAGGGG   5082
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   5083 TTCCAGAAAGCTGACCTCATTTAGCAAGCTGCTCCAGAAAAATGTGAGTA   5132
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   5133 ATGTAATGGACAGGAACAATTAGCCATACTAATAACATTGCCAATGAGGC   5182
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   5183 TGCGTCAAGCTGTGACAGAAGCAGTAAGGAATACTTCGACGTTAAAAAAA   5232
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   5233 TGTTTGAGAGCAATTTAAAATATATTATTTTAACATGTTTTCTATCAGCC   5282
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   5283 TTCATCACATGACAGAAATACTTTTAAGTTAGTCCCAACTTTATCTAAAA   5332
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   5333 TGCAGCAATCTCATTCCAAGTGAATCAGAGTTGTTATTTTGGAATCAAGC   5382
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   5383 TGTTGCTTTCTATATCCTGGATTGTTCTCACTGTTCTTACTTTAAGAGAC   5432
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   5433 ATAATACTGATATGATACTTGAATACTACCAGCCTTCCAGTGTAGGAGGT   5482
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   5483 AATGAAGTGAGCATTCAGATCTGATCTAACCTATTAAGTAGCTCAATTTC   5532
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   5533 ACCTGCAATTAAAATTAGACATCTTCATGCAAACTAAAATCTGTTGCTGT   5582
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   5583 AGTGAAGAGAAGAAATAAAAGAATGCCATTTTGAGAATTCCAGCTTCCAA   5632
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   5633 AATAGCAAACAGGGAAATCTAGACTGTGTTCTTTTGTAAGGTAGAAATGA   5682
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   5683 AGACTAAAAGTTAGGTTTTTTTTTTTTTTCTTCCCATTTTGCCAATACAA   5732
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   5733 CTTCATTCTAAAACATAGGGATTCTTTCAGTCAGTCAAGGAGTAACTCAC   5782
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   5783 ATGCCACCATCTTTTATTCAAAGGCAGGCACAGATGTTCCTTCTGCAGGG   5832
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   5833 GAGGATTTAATTTATGAAAATGATATTGTTTATGCATGAATGAACTGCAT   5882
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   5883 GCACTCTGCATAACACATAGCACTTCCATCTGATCAGAGAAATACCACAG   5932
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   5933 AACCAGTGCCAATGTCAGAAACATATTCTACAAATTTACTCACTTAAATG   5982
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   5983 TTTAATGAATATTTGGAAGGCATTTTCAAACCATAAGAAACATTTTAAAT   6032
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   6033 TATCTTCTTTTATGAATTCCTACCCATATTTAAAAGAGACTCTTACAGTT   6082
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   6083 TTTGTAATTGGCTAATGCTTATACCCAGTTTGTAAGAAAAGAACATATTT   6132
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   6133 TACTAAATGAAAACCAACCAAAAAAAAATGCTGGCAAGTTTGGCTTCACT   6182
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   6183 GGAAAAAATATTTCGTTTAGTTTTGCTGTTTAATGCTTGTCATGAATAAT   6232
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   6233 ATTTGGGATTCTATCTGTTTCTTCATCTTGAGCCACGACTATTCCTATCA   6282
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   6283 AATAAGATGCTTAGGTATACTTGTTTAATGTGAAAATCCTATGAATAGTT   6332
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   6333 ATTTCTAGAAAAAGCTGGTATGTAAAATCAGGGGGAAATTTCATAAAGAT   6382
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   6383 GAAATTGGGCTAAATATTGTAACATGCATAATTACTATTGAATAGGAACA   6432
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   6433 CTTCACATAACATATTTTACTTTATATAACCAATTGCAGCTATATAGTAT   6482
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   6483 GATCTATCTACTTTTAATCATTAAAACAATTATATATAAATTAAAATGAA   6532
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   6533 AGATTATAATATCAAGAGTGTTCTACTAATTTTAGGTTTATAATATGTTA   6582
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   6583 CAGTAAAATACCATTTGAAATAAATTTTGTGTTCTAATTTATCTTAAAAT   6632
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   6633 CTCTCTGTTTTTACATTTGAAAGTCCTTACATTCTTACAAAATTAATGCA   6682
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   6683 TTTTCTGAAAGAAGCTAGCAATTACTAAAATGATATATGGATCATTAGCT   6732
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   6733 AACAGTTTGAATCAAGCTGTTTTAGTTCTATAATTATACAAGAAATTTAA   6782
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   6783 AGTGAAAATACCTATTAAGCAATTAATAAAACTAGGTTTCAAAATATTGG   6832
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   6833 CTAATTTTCTCCTAATGGGAAATGTAAAATAGCAAAACTGCTTCTTAAAC   6882
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   6883 TACACAAAAACCTCCTCACTTCTCCTTTTCTCTCTCTCTAACACCACTTA   6932
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   6933 TTTCCTGAAAATCATCTAAATAAAATATTTAATTCCAGGGTCTGATGAAG   6982
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   6983 AATAAAAGAGCCAATGCAACATCTTGTGGAACACCAGGACTGAGAACTCT   7032
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   7033 TGTTGTTACCATTGCAAAGAGGCGTTCTGGCGTCAGATGCACAGTGATTT   7082
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   7083 GTATGGTGGCATAATCATTGGCTCCTGGCCAGGCATTATGTTTCAGAGGA   7132
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   7133 CACTATTGTCAAGAACCATTCAACTAGAAATCTGCACTGTATGCACTCAA   7182
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   7183 AAGTTGAGATCATCTGCCTTCCTATGACAGGAAGAATTCTGTGCTGGCAA   7232
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   7233 TTGACTCATGGACTCTCTTCACATACACTAAGGCTTGGTCCAGTGGCTCT   7282
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   7283 GATGGAATTAACTGTGCAGCCAAACTAGTGGCATTGACAAGACAGGGCCA   7332
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   7333 CAGTCTCTGGGGACTTCAGGAGAAATTGCTAATTTTAAAATGCAGAGTAT   7382
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   7383 TATGTTAATGCTGGATTAAATCTTCAGATACATTAAATGTGGATTTGGCC   7432
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   7433 ATCTAAGCATTATTATGTTATTTGCCCAGTTAATTTAGAGGTAGATGGAT   7482
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   7483 GGTGACAATAACCATCTCTACAGATCCACAATTCTAAGAGATGGATCCAA   7532
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   7533 TTGTGAAATGATATGGAGAGATAGAGTAAGTTCAATCTAGCATATATGAA   7582
+                                                                       
+c84770454-847   3966 --------------------------------------------------   3965
+
+c181680517-18   7583 GTAATTTGGTAACTGACTTTTCTTTTAACAAGATCAAAAGCTAACCTGCT   7632
+                                                     |||||||           
+c84770454-847   3966 --------------------------------ATCAAAA-----------   3972
+
+c181680517-18   7633 TTACACTTTCATGTCTAAGGACAGCCAACCAGAGAGATGGCTTCACACAC   7682
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   7683 TAGCCCACTGCTAAGTGCTTTTCATTCACTTTCATATTTCATCATCAAAG   7732
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   7733 CACCCTCCTGCCTTATTTATAGATGGGGAAACTTCAGGAAGTTGAGATAC   7782
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   7783 CTAGATATTTGCATTCCTGTCTTCCTTTCTTCATTCAGGTTTTTCTTTCA   7832
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   7833 TTGCCACTTCCTCAAAGAAGCTTTTACTGATTCCCATTTAAAATAGCAAC   7882
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   7883 TGACTTCAACTCCACCAAAATCACTGTATTGCCCCTCCCTCTTTCCAGAG   7932
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   7933 CATTTGCCTATCAAATGTTATCTTATGTATTTACTTGTATAGCTTAATTT   7982
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   7983 TAAACTATCTATCTCTAGGTCTTCTGAGCACCTGAGAAACAGAGACAAAG   8032
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   8033 TTGTCTCTTCTGTGTGTTGCTGTTCCTCTGGTGCTTAGAAGACCTAGAGG   8082
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   8083 ATCCTCAATAAATATTAACTTTCCAAGGGAACTGAAGAGCACTAATGTGA   8132
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   8133 TGCTAAAGCCTGTTGCCTTAACCACTATGCTATAAGTCAAATCAGTTGAG   8182
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   8183 AATGGAGAGGACCACAAATTATTTTCAGTCCAGCAAGTGTTATAAACATT   8232
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   8233 AATTCTATAAAAAGAAAACAATTGAAACTAATTTCTTATTATATTGCATG   8282
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   8283 GCACCAAACTCCCCCCACTTCCTTTTTGAGGATCATGAGTTGTCTGTCAT   8332
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   8333 TGTTTCTTTTTATTGATATCAATTGGTTAAATATAATCTGGAATTGGAAT   8382
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   8383 AAAAGAAAAACTATTATAGGCTTTTTCCAGACCATGTATTTCAATGCATA   8432
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   8433 TTATTTTTTCCTTTCTGTTCATTATTCTTTCAGTAATTGCACTTGTTCTA   8482
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   8483 TTTTTAGTGTTATGTAAAATTACTGTAGCTCATAATTTCTATTTTGAAGG   8532
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   8533 GTTCAGTGTATAAACTTAGCACATCAATACTATCTTTTTAGTGTTCGCGC   8582
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   8583 TCAATGGTGTCAGTTAAGAGATCACCATCACTTTTGGTGACGTCAATGAA   8632
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   8633 GGGGTATTGCAATGCTTAAGAGAACTGTTAATCCCTTTCCACTGGTGTCA   8682
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   8683 CTAACAATTGTAGTGCTTGTTTATTCATAGCAGGTACGTGACTAAGTAAT   8732
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   8733 GTTAACATCAAAGCAGAAAGAGGATAATAGAGTGTTCTAAAAAGAAAATT   8782
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   8783 CGGTGGTTGGGTGCAGTGGCTCACACCTGTAATCCCAGCACTTTTGAGAG   8832
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   8833 GCCAATGGGGGTGGATAGTTTGAGCCTAGGAGTTCAAGACCAGTCTGGGC   8882
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   8883 AATATGGTGAAACCTCGTGTCTACAAAAAATACAAAAACTAGTGGTGCAT   8932
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   8933 GATGGCATGCATCTATAGTCCCAGCTACTCGGGAGGCTCAGGTGGGAGGA   8982
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   8983 TCACCTGAGCCTGGGGAGGTCAAGGCTGCAGTGAGACGTGATTGTACCAC   9032
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   9033 TGTACTCCAGCCTGGGTGACAAAGTGAGACCCTGTCTCAAAAAAAAAATG   9082
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   9083 ATTTGAGATAACATCACTTGTCATTGTTTGTTAACTGAATAATCTTTATT   9132
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   9133 CTAGCCAGTGCCTAAATACATAATAAATGATAGTACAAATGGATATAAAT   9182
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   9183 TATAACTAAACCTAAGTAGTGATATTTATCACAATATTTCTTTACTAGAA   9232
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   9233 GAATTTCTTTGTTAATAGAGGCAAGGCTACTTGTTTAGATACCTTAAAAT   9282
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   9283 AACATAAGATTTTTGGATAAATAAATTAATGATTCTTTGATTCTGACTGG   9332
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   9333 CATATTAAAAATATTAAGCGAAGAGATCTTTGCTTCCCAGGTTTTATTTT   9382
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   9383 TTGTCTAATTAACTACTGGTGCATTTATATTAAAACATATTGTCAAGGGA   9432
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   9433 AAACGTATATATATATATGTGTATATATGGTGTGTGTGTGTGTGTGTGTG   9482
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   9483 TGTGTGTGTGCACACATATGCTATACTTGGTTGAGTAGTATCCCCTTCCC   9532
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   9533 TTGCCCACCTCTCTCCCAAATTTATGTCCATCCAGAACCTCAAAATGTGG   9582
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   9583 CCTCATTTGAAATATTGTCTTTCCAGATTTAATTAAGATATAAGATGTAA   9632
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   9633 ATTGATACAAGTTCATGCTGGATTACGGTGGGCCCTAAATCCAATCACTG   9682
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   9683 ATGTCCTGATAAGAAGCAGACAGAACACACAGACACACAGCATACAGGAA   9732
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   9733 GAATGGCATGTGAAGGCAAAGACAGAGACTGGAGTGATGTGTCTACAAAT   9782
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   9783 CAAGGGGCCCCAAGGATTTGGGGCCCACATCAGAAGCTGGGAAAGAGACA   9832
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   9833 GGAATTCTCAGCTTCTCCTTCTGAATCCCTAAGAAGGAATCAACCCTGCT   9882
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   9883 GACACCTTGATTTTAAACTTCTTGTCTCCAGAACTGTAATATAATACATT   9932
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   9933 TCTGTTGTCTTAAGCTACCCAGTTGCTGGTGATTTGTTATGGCAGCCCTA   9982
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18   9983 GGAAACTGATAGGTATACTAAAATCTCTAATGAATTGATGTTAAATATAT  10032
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  10033 ATAAGTATAGGAGAGTTCATTTAAATTCTTCTGAAAATGTCTTCTTAAAC  10082
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  10083 TTTTAATGATACAGTATATAACAACCAGTATACGTAGTTGGTATCGGGTT  10132
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  10133 TGACATTTAAACAAGCTGACAAAAAACAGCTGTTTAATAAACATCTGAAT  10182
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  10183 TATATAAAAGTTTTATTGTTTATTATTCATGTGAATGACTTAAACTGACA  10232
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  10233 TCTACATTTAGTGAAGTGTGAATGGGCCTAGCCAATAAACTATGGGTAAT  10282
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  10283 TTTTTTAAAGTCTCATCTTTGAACTCACAAAAAATTATCAAATATCAGCT  10332
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  10333 ATTATGTATTCTTCATGTGAAGAAAATGTCATATTTATTTGATTTGTGGA  10382
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  10383 TTAGCATATATATTAATAGAGCTTTTGAAAGAACAAATGTAGCACTTTCC  10432
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  10433 CGATTTCATAGACACTCATTTAACACACAAGTTCATATTTTAAAGTACAT  10482
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  10483 AATTTTAAAAAAATTCTAGTCCAAATGAATTTAAGTGCCATGACTTCTAA  10532
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  10533 AAATTCTGTCTCTATTTTTGGGTTTTATAGGACCTTGAGCCAGTACTCTT  10582
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  10583 CTGGTGAGCTTAAGAGGCTAAGACTTCACCTTTAGTTATATGGGGCTTTC  10632
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  10633 ATCTGATTATTTGTCTATTTTGATTGCTCTAAATACAAGTTAGTGTGTAT  10682
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  10683 TTCATCTGAATGTATTTCATTATAAGTTTTGGTTTTATGTAGATCTGGGG  10732
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  10733 ATCTGTCTTGTTTTTAATCTTGATTGGTCTGTTTGTTTTGGGATAGTTGG  10782
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  10783 TACTTTCATTTCTTATGCTTGCTTTCTTTTTCATTTTGTGCCCACCTTTA  10832
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  10833 GTCAGGTGAACATCAGTAAGGAATAAAATTTTATTTTTTTAAGCCACTGA  10882
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  10883 AAAAATTTAAAAACCACATCATAACTCTGCCTCTGCTGACTGATAAAAAT  10932
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  10933 GCTAACTTATTAAGACAAAATGTTATGCAAGAAGACTTTATTGGAATAGA  10982
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  10983 GAAACATCCTTTTTATGTAAGAAATATCAACAGAGACATGTGCCTTTCTT  11032
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  11033 GTGACAAATGTGGTATGTGTGTGGATTAGAGGTCTGGAATGTGGCAGCAT  11082
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  11083 TTCAGTACTTGGAGGGGAGAATTAGAGTAGGGTAGAAAGATAGACGGGGA  11132
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  11133 GCAGAGGATGATTCTCACCCAGTAGAAAGCAGAGTGAAGAAAGAAAGGGG  11182
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  11183 AATTGTTTTTTGCATTATATTATTTGAACTGTGGATTAAGTCTTTCCATA  11232
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  11233 AGCCATCCCTACGCCTCTAAGTAGGTTTTATTAACTTAAGCTGGTTTGAG  11282
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  11283 ATGGGTTTTTGGTCACACACAAGAATTGCCTGATACAAGAGAGGCTTTGA  11332
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  11333 TTTTGTTGTTGCTTGCTCATTTTTATACACTAAGATGGAGAAAACCCTGG  11382
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  11383 ACATAGTGAAGACGAAATTGAGGAAGGTGTTGGGTAGAGTGGAGGGTAGA  11432
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  11433 AGACCTGTAACATAGGTACAGAATTACATTAAACTGGAAGGACTTATATC  11482
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  11483 CAGATATAGGAGTCAGGGTAGAAAGAGAGAATGTTAGCAGTAAGGGTAAC  11532
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  11533 AGAGTAGCAGAAGTTTATTCTTACCAGGTCCTGTTATGTGACAGTGGAGG  11582
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  11583 CATGTTGACCTTCTGACTAGGGGAGTTAAAGGAGAACACTGAAGGTTTAG  11632
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  11633 AATAATGTCTCTAAGGATAGAAAGAGAAAGTTTCATCAAGACTCATCAAT  11682
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  11683 AATAGGGCAGCAGGGCTTAGGGCCAAGCAAATTCAGAGACCATGATATTA  11732
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  11733 TAGTAGTTTGTAGTGGTCTTAATCCATCTAATTTTTCAGCATTTTCTCAA  11782
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  11783 TGGCCAATACTTAGCAGTGGTAGTGTTTTATGGCATTTGGACAACAGAAG  11832
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  11833 TGAAAGCACTGGTAAGAGAGACGTTGAAGTGAAACACCATGGGGCTCAGA  11882
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  11883 AAAGCAGAGTTGATCCATCTGGTACATGGGCAAGGATGGTCCTGAACAAT  11932
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  11933 TCTGCAGTAAGTTGGAAGATAGAAAAAATACCTAACGAACTTGTAGATCT  11982
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  11983 GGGTAAGGAGATTTTTGGCAGAATATTGTAAGGCTAATTGGCTTCTCTTA  12032
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  12033 ACTATATGAGATAGGGTTTTACAAGGGAGAGATAAGCGAGCATAATTTAG  12082
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  12083 AAGAACTATAGGGGGTCCCAGGCAGACTCTCTGGCTGGAAAATTATTCTG  12132
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  12133 ATAGCAAGAAATTAGCCCCAAAGCAAAGATGAAAAGTAGGGTACTTCCAA  12182
+                                                                       
+c84770454-847   3973 --------------------------------------------------   3972
+
+c181680517-18  12183 TTAAACATGTCATAAGGGCAAGCCTCAATCAAGAGTGTGGC  12223
+                                                              
+c84770454-847   3973 -----------------------------------------   3972
+
+
+#---------------------------------------
+#---------------------------------------
