@@ -44,7 +44,7 @@
 
 4. Множественное выравнивание
 
-
+![alignment_result.png](alignment_result.png)
 
 
 
