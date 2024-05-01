@@ -46,7 +46,7 @@
 
 ![alignment_result.png](alignment_result.png)
     
-    Результаты выравнивания в файле [alignment.aln-clustalw](alignment.aln-clustalw)
+Результаты выравнивания в файле [alignment.aln-clustalw](alignment.aln-clustalw)
 
 ### 5. Краткий анализ консервативности полученного выравнивания в произвольной форме
 
