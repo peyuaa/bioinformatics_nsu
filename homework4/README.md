@@ -100,8 +100,8 @@ chmod +x parse.sh
 if (( $(echo "$(cat parse_result.txt) < 90" | bc -l) )); then
     echo "Not OK"
 else
-    samtools sort output/alignment.bam > alignment.sorted.bam
-    freebayes -f reference.fna -b alignment.sorted.bam > output/result.vcf
+    samtools sort aln-se.bam > alignment.sorted.bam
+    freebayes -f reference.fna -b alignment.sorted.bam > result.vcf
     echo "OK"
 fi
 ```
