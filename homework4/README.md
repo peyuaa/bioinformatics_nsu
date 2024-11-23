@@ -108,4 +108,26 @@ else
 fi
 ```
 
-# Устанавливаем фреймворк
+# Устанавливаем фреймворк scipipe
+#### https://scipipe.org/
+
+1. Скачиваем и устанавливаем Go
+```
+https://go.dev/doc/install
+```
+
+2. Устанавливаем scipipe с помощью go
+```bash
+go install github.com/scipipe/scipipe/...@latest
+```
+
+3. Создаем папку, в котором будет код
+```bash
+mkdir workflow
+cd workflow
+```
+
+4. Инициализируем go-модуль
+```bash
+go mod init workflow
+```
