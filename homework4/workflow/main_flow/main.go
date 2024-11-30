@@ -13,7 +13,7 @@ func main() {
 	downloadFastq.SetOut("fastq_gz", "SRR31294328.fastq.gz")
 
 	// Step 2: Decompress SRR31294328.fastq.gz
-	decompressFastq := wf.NewProc("decompress_fastq", "gzip -d {i:fastq_gz} && mv {i:fastq_gz/.gz/} {o:fastq}")
+	decompressFastq := wf.NewProc("decompress_fastq", "gzip -d -c {i:fastq_gz} > {o:fastq}")
 	decompressFastq.In("fastq_gz").From(downloadFastq.Out("fastq_gz"))
 	decompressFastq.SetOut("fastq", "SRR31294328.fastq")
 
@@ -22,7 +22,7 @@ func main() {
 	downloadGenome.SetOut("fna_gz", "GCF_000005845.2_ASM584v2_genomic.fna.gz")
 
 	// Step 4: Decompress reference genome
-	decompressGenome := wf.NewProc("decompress_genome", "gzip -d {i:fna_gz} && mv {i:fna_gz/.gz/} {o:fna}")
+	decompressGenome := wf.NewProc("decompress_genome", "gzip -d -c {i:fna_gz} > {o:fna}")
 	decompressGenome.In("fna_gz").From(downloadGenome.Out("fna_gz"))
 	decompressGenome.SetOut("fna", "GCF_000005845.2_ASM584v2_genomic.fna")
 
