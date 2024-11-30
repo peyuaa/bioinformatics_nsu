@@ -38,7 +38,7 @@ func main() {
 	bwaMem.SetOut("sam_gz", "aln-se.sam.gz")
 
 	// Step 8: Decompress SAM file
-	decompressSam := wf.NewProc("decompress_sam", "gunzip -c {i:sam_gz} > {o:sam}")
+	decompressSam := wf.NewProc("decompress_sam", "gzip -d -c {i:sam_gz} > {o:sam}")
 	decompressSam.In("sam_gz").From(bwaMem.Out("sam_gz"))
 	decompressSam.SetOut("sam", "aln-se.sam")
 
