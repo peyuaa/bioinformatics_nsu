@@ -26,14 +26,10 @@ func main() {
 	decompressGenome.In("fna_gz").From(downloadGenome.Out("fna_gz"))
 	decompressGenome.SetOut("fna", "GCF_000005845.2_ASM584v2_genomic.fna")
 
-	// Step 5: Run FastQC
-	fastqc := wf.NewProc("fastqc", "fastqc -o {o:qc_out} {i:fastq}")
-	fastqc.In("fastq").From(decompressFastq.Out("fastq"))
-	fastqc.SetOut("qc_out", "fastqc_out")
-
-	// Step 6: BWA index
-	bwaIndex := wf.NewProc("bwa_index", "bwa index {i:fna}")
-	bwaIndex.In("fna").From(decompressGenome.Out("fna"))
+	// Step 5: Run FastQC and bwa index
+	fastqc_bwa := wf.NewProc("fastqc_bwa", "fastqc_bwa {i:fastq} && bwa index {i:fna}")
+	fastqc_bwa.In("fastq").From(decompressFastq.Out("fastq"))
+	fastqc_bwa.In("fna").From(decompressGenome.Out("fna"))
 
 	// Step 7: BWA mem
 	bwaMem := wf.NewProc("bwa_mem", "bwa mem {i:fna} {i:fastq} | gzip -3 > {o:sam_gz}")
