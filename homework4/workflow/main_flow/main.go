@@ -26,10 +26,10 @@ func main() {
 	decompressGenome.In("fna_gz").From(downloadGenome.Out("fna_gz"))
 	decompressGenome.SetOut("fna", "GCF_000005845.2_ASM584v2_genomic.fna")
 
-	// Step 5: Run FastQC and bwa index
-	fastqc_bwa := wf.NewProc("fastqc_bwa", "fastqc_bwa {i:fastq} && bwa index {i:fna}")
-	fastqc_bwa.In("fastq").From(decompressFastq.Out("fastq"))
-	fastqc_bwa.In("fna").From(decompressGenome.Out("fna"))
+	//// Step 5: Run FastQC and bwa index
+	//fastqc_bwa := wf.NewProc("fastqc_bwa", "fastqc {i:fastq} && bwa index {i:fna}")
+	//fastqc_bwa.In("fastq").From(decompressFastq.Out("fastq"))
+	//fastqc_bwa.In("fna").From(decompressGenome.Out("fna"))
 
 	// Step 7: BWA mem
 	bwaMem := wf.NewProc("bwa_mem", "bwa mem {i:fna} {i:fastq} | gzip -3 > {o:sam_gz}")
@@ -53,7 +53,7 @@ func main() {
 	flagstat.SetOut("stats", "samtools_result.txt")
 
 	// Step 11: Parse and evaluate results
-	parseResult := wf.NewProc("parse_result", "awk '/mapped/{print $1}' {i:stats} > {o:parse_out}")
+	parseResult := wf.NewProc("parse_result", `grep "[0-9] mapped (" {i:stats} | sed 's/^.*mapped/mapped/' | tr -d -c "0-9." > {o:parse_out}`)
 	parseResult.In("stats").From(flagstat.Out("stats"))
 	parseResult.SetOut("parse_out", "parse_result.txt")
 
