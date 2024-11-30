@@ -26,6 +26,11 @@ func main() {
 	decompressGenome.In("fna_gz").From(downloadGenome.Out("fna_gz"))
 	decompressGenome.SetOut("fna", "GCF_000005845.2_ASM584v2_genomic.fna")
 
+	// step 4.5: index reference
+	index := wf.NewProc("index", "bwa index {i:fna} && touch {o:stub}")
+	index.In("fna").From(decompressGenome.Out("fna"))
+	index.SetOut("stub", "stub.txt")
+
 	// Step 5: BWA mem
 	bwaMem := wf.NewProc("bwa_mem", "bwa mem {i:fna} {i:fastq} | gzip -3 > {o:sam_gz}")
 	bwaMem.In("fna").From(decompressGenome.Out("fna"))
