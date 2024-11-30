@@ -58,10 +58,11 @@ func main() {
 	parseResult.SetOut("parse_out", "parse_result.txt")
 
 	sortBam := wf.NewProc("final", `
-if (( $(echo "$(cat {i:parse_out}) < 90" | bc -l) )); then
-    echo "Not OK"
+if (( $(echo "$(cat {i:parse_out}) >= 90" | bc -l) )); then
+	samtools sort {i:bam} > {o:sorted_bam}
 else
-    samtools sort {i:bam} > {o:sorted_bam}
+	touch {o:sorted_bam}  # Создаем пустой файл
+    echo "Not OK"
 fi`)
 	sortBam.In("parse_out").From(parseResult.Out("parse_out"))
 	sortBam.In("bam").From(samToBam.Out("bam"))
@@ -70,6 +71,8 @@ fi`)
 	freebayes := wf.NewProc("freebayes", `
 if (( $(echo "$(cat {i:parse_out}) >= 90" | bc -l) )); then
     freebayes -f {i:fna} -b {i:sorted_bam} > {o:vcf}
+else
+	touch {o:vcf} # Создаем пустой файл
 fi`)
 	freebayes.In("parse_out").From(parseResult.Out("parse_out"))
 	freebayes.In("fna").From(decompressGenome.Out("fna"))
