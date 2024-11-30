@@ -57,12 +57,21 @@ func main() {
 	parseResult.In("stats").From(flagstat.Out("stats"))
 	parseResult.SetOut("parse_out", "parse_result.txt")
 
-	// Step 12: Conditional step for sorting and variant calling
-	sortBam := wf.NewProc("sort_bam", "samtools sort {i:bam} > {o:sorted_bam}")
+	sortBam := wf.NewProc("final", `
+if (( $(echo "$(cat {i:parse_out}) < 90" | bc -l) )); then
+    echo "Not OK"
+else
+    samtools sort {i:bam} > {o:sorted_bam}
+fi`)
+	sortBam.In("parse_out").From(parseResult.Out("parse_out"))
 	sortBam.In("bam").From(samToBam.Out("bam"))
 	sortBam.SetOut("sorted_bam", "alignment.sorted.bam")
 
-	freebayes := wf.NewProc("freebayes", "freebayes -f {i:fna} -b {i:sorted_bam} > {o:vcf}")
+	freebayes := wf.NewProc("freebayes", `
+if (( $(echo "$(cat {i:parse_out}) >= 90" | bc -l) )); then
+    freebayes -f {i:fna} -b {i:sorted_bam} > {o:vcf}
+fi`)
+	freebayes.In("parse_out").From(parseResult.Out("parse_out"))
 	freebayes.In("fna").From(decompressGenome.Out("fna"))
 	freebayes.In("sorted_bam").From(sortBam.Out("sorted_bam"))
 	freebayes.SetOut("vcf", "result.vcf")
