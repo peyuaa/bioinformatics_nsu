@@ -61,8 +61,7 @@ func main() {
 if (( $(echo "$(cat {i:parse_out}) >= 90" | bc -l) )); then
 	samtools sort {i:bam} > {o:sorted_bam}
 else
-	touch {o:sorted_bam}  # Создаем пустой файл
-    echo "Not OK"
+    echo "Not OK" > {o:sorted_bam}
 fi`)
 	sortBam.In("parse_out").From(parseResult.Out("parse_out"))
 	sortBam.In("bam").From(samToBam.Out("bam"))
@@ -72,7 +71,7 @@ fi`)
 if (( $(echo "$(cat {i:parse_out}) >= 90" | bc -l) )); then
     freebayes -f {i:fna} -b {i:sorted_bam} > {o:vcf}
 else
-	touch {o:vcf} # Создаем пустой файл
+	echo "Not OK" > {o:vcf}
 fi`)
 	freebayes.In("parse_out").From(parseResult.Out("parse_out"))
 	freebayes.In("fna").From(decompressGenome.Out("fna"))
