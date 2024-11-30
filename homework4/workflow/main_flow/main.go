@@ -6,7 +6,7 @@ import (
 
 func main() {
 	// Initialize the workflow with a concurrency level of 4
-	wf := sp.NewWorkflow("bioinformatics_pipeline", 4)
+	wf := sp.NewWorkflow("bioinformatics_pipeline", 1)
 
 	// Step 1: Download SRR31294328.fastq.gz
 	downloadFastq := wf.NewProc("download_fastq", "curl -o {o:fastq_gz} https://trace.ncbi.nlm.nih.gov/Traces/sra-reads-be/fastq?acc=SRR31294328")
@@ -26,33 +26,28 @@ func main() {
 	decompressGenome.In("fna_gz").From(downloadGenome.Out("fna_gz"))
 	decompressGenome.SetOut("fna", "GCF_000005845.2_ASM584v2_genomic.fna")
 
-	//// Step 5: Run FastQC and bwa index
-	//fastqc_bwa := wf.NewProc("fastqc_bwa", "fastqc {i:fastq} && bwa index {i:fna}")
-	//fastqc_bwa.In("fastq").From(decompressFastq.Out("fastq"))
-	//fastqc_bwa.In("fna").From(decompressGenome.Out("fna"))
-
-	// Step 7: BWA mem
+	// Step 5: BWA mem
 	bwaMem := wf.NewProc("bwa_mem", "bwa mem {i:fna} {i:fastq} | gzip -3 > {o:sam_gz}")
 	bwaMem.In("fna").From(decompressGenome.Out("fna"))
 	bwaMem.In("fastq").From(decompressFastq.Out("fastq"))
 	bwaMem.SetOut("sam_gz", "aln-se.sam.gz")
 
-	// Step 8: Decompress SAM file
+	// Step 6: Decompress SAM file
 	decompressSam := wf.NewProc("decompress_sam", "gzip -d -c {i:sam_gz} > {o:sam}")
 	decompressSam.In("sam_gz").From(bwaMem.Out("sam_gz"))
 	decompressSam.SetOut("sam", "aln-se.sam")
 
-	// Step 9: Convert SAM to BAM
+	// Step 7: Convert SAM to BAM
 	samToBam := wf.NewProc("sam_to_bam", "samtools view -bS {i:sam} > {o:bam}")
 	samToBam.In("sam").From(decompressSam.Out("sam"))
 	samToBam.SetOut("bam", "aln-se.bam")
 
-	// Step 10: Samtools flagstat
+	// Step 8: Samtools flagstat
 	flagstat := wf.NewProc("flagstat", "samtools flagstat {i:bam} > {o:stats}")
 	flagstat.In("bam").From(samToBam.Out("bam"))
 	flagstat.SetOut("stats", "samtools_result.txt")
 
-	// Step 11: Parse and evaluate results
+	// Step 9: Parse and evaluate results
 	parseResult := wf.NewProc("parse_result", `grep "[0-9] mapped (" {i:stats} | sed 's/^.*mapped/mapped/' | tr -d -c "0-9." > {o:parse_out}`)
 	parseResult.In("stats").From(flagstat.Out("stats"))
 	parseResult.SetOut("parse_out", "parse_result.txt")
