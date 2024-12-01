@@ -78,6 +78,9 @@ fi`)
 	freebayes.In("sorted_bam").From(sortBam.Out("sorted_bam"))
 	freebayes.SetOut("vcf", "result.vcf")
 
+	wf.PlotGraph("my_workflow_graph.dot")
+	wf.PlotGraphPDF("my_workflow_graph.dot")
+
 	// Run the workflow
 	wf.Run()
 }

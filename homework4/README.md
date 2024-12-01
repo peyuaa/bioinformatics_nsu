@@ -121,13 +121,39 @@ https://go.dev/doc/install
 go install github.com/scipipe/scipipe/...@latest
 ```
 
-3. Создаем папку, в котором будет код
+# Как запустить Hello world
+
+1. Зайти в workflow/hello_world
 ```bash
-mkdir workflow
-cd workflow
+cd workflow/hello_world
 ```
 
-4. Инициализируем go-модуль
+4. Запустить
 ```bash
-go mod init workflow
+go run hello_world.go
 ```
+
+# Как запустить основной пайплайн
+
+1. Зайти в workflow/main_flow
+```bash
+cd workflow/main_flow
+```
+
+2. Запустить программу. 
+Предполагается, что все используемые зависимости установлены. В самом пайплайне они не устанавливаются.
+```bash
+go run main.go
+```
+
+# Визуализация пайплайна (Boardmix)
+
+![](pipeline.png)
+
+# Визуализация через SciPipe
+
+![](my_workflow_graph.dot_page-0001.jpg)
+
+## В чем разница между моей визуализацией и визуалиазцией Scipipe
+
+SciPipe более корректно визуализировало поток данных.
