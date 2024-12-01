@@ -1,0 +1,44 @@
+AUDIT   2024/11/30 23:21:26 [Workflow:bioinformatics_pipeline] Starting workflow (Writing log to log/scipipe-20241130-232126-bioinformatics_pipeline.log)
+AUDIT   2024/11/30 23:21:26 [Task:download_genome] Output file already exists, so skipping: GCF_000005845.2_ASM584v2_genomic.fna.gz
+AUDIT   2024/11/30 23:21:26 [Task:download_fastq] Output file already exists, so skipping: SRR31294328.fastq.gz
+AUDIT   2024/11/30 23:21:26 [Task:decompress_genome] Executing: gzip -d -c ../GCF_000005845.2_ASM584v2_genomic.fna.gz > GCF_000005845.2_ASM584v2_genomic.fna
+AUDIT   2024/11/30 23:21:26 [Task:decompress_genome] Finished: gzip -d -c ../GCF_000005845.2_ASM584v2_genomic.fna.gz > GCF_000005845.2_ASM584v2_genomic.fna
+AUDIT   2024/11/30 23:21:26 [Task:decompress_fastq] Executing: gzip -d -c ../SRR31294328.fastq.gz > SRR31294328.fastq
+AUDIT   2024/11/30 23:21:28 [Task:decompress_fastq] Finished: gzip -d -c ../SRR31294328.fastq.gz > SRR31294328.fastq
+AUDIT   2024/11/30 23:21:28 [Task:index] Executing: bwa index ../GCF_000005845.2_ASM584v2_genomic.fna && touch stub.txt
+AUDIT   2024/11/30 23:21:29 [Task:index] Finished: bwa index ../GCF_000005845.2_ASM584v2_genomic.fna && touch stub.txt
+AUDIT   2024/11/30 23:21:29 [Task:bwa_mem] Executing: bwa mem ../GCF_000005845.2_ASM584v2_genomic.fna ../SRR31294328.fastq | gzip -3 > aln-se.sam.gz
+AUDIT   2024/11/30 23:23:28 [Task:bwa_mem] Finished: bwa mem ../GCF_000005845.2_ASM584v2_genomic.fna ../SRR31294328.fastq | gzip -3 > aln-se.sam.gz
+AUDIT   2024/11/30 23:23:28 [Task:decompress_sam] Executing: gzip -d -c ../aln-se.sam.gz > aln-se.sam
+AUDIT   2024/11/30 23:23:30 [Task:decompress_sam] Finished: gzip -d -c ../aln-se.sam.gz > aln-se.sam
+AUDIT   2024/11/30 23:23:30 [Task:sam_to_bam] Executing: samtools view -bS ../aln-se.sam > aln-se.bam
+AUDIT   2024/11/30 23:23:54 [Task:sam_to_bam] Finished: samtools view -bS ../aln-se.sam > aln-se.bam
+AUDIT   2024/11/30 23:23:54 [Task:flagstat] Executing: samtools flagstat ../aln-se.bam > samtools_result.txt
+AUDIT   2024/11/30 23:23:55 [Task:flagstat] Finished: samtools flagstat ../aln-se.bam > samtools_result.txt
+AUDIT   2024/11/30 23:23:55 [Task:parse_result] Executing: grep "[0-9] mapped (" ../samtools_result.txt | sed 's/^.*mapped/mapped/' | tr -d -c "0-9." > parse_result.txt
+AUDIT   2024/11/30 23:23:55 [Task:parse_result] Finished: grep "[0-9] mapped (" ../samtools_result.txt | sed 's/^.*mapped/mapped/' | tr -d -c "0-9." > parse_result.txt
+AUDIT   2024/11/30 23:23:55 [Task:final] Executing: 
+if (( $(echo "$(cat ../parse_result.txt) >= 90" | bc -l) )); then
+	samtools sort ../aln-se.bam > alignment.sorted.bam
+else
+    echo "Not OK" > alignment.sorted.bam
+fi
+AUDIT   2024/11/30 23:23:55 [Task:final] Finished: 
+if (( $(echo "$(cat ../parse_result.txt) >= 90" | bc -l) )); then
+	samtools sort ../aln-se.bam > alignment.sorted.bam
+else
+    echo "Not OK" > alignment.sorted.bam
+fi
+AUDIT   2024/11/30 23:23:55 [Task:freebayes] Executing: 
+if (( $(echo "$(cat ../parse_result.txt) >= 90" | bc -l) )); then
+    freebayes -f ../GCF_000005845.2_ASM584v2_genomic.fna -b ../alignment.sorted.bam > result.vcf
+else
+	echo "Not OK" > result.vcf
+fi
+AUDIT   2024/11/30 23:23:55 [Task:freebayes] Finished: 
+if (( $(echo "$(cat ../parse_result.txt) >= 90" | bc -l) )); then
+    freebayes -f ../GCF_000005845.2_ASM584v2_genomic.fna -b ../alignment.sorted.bam > result.vcf
+else
+	echo "Not OK" > result.vcf
+fi
+AUDIT   2024/11/30 23:23:55 [Workflow:bioinformatics_pipeline] Finished workflow (Log written to log/scipipe-20241130-232126-bioinformatics_pipeline.log)

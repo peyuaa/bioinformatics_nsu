@@ -1,0 +1,32 @@
+digraph "bioinformatics_pipeline" {
+  rankdir=LR;
+  graph [fontname="Arial",fontsize=13,color="#384A52",fontcolor="#384A52"];
+  node  [fontname="Arial",fontsize=11,color="#384A52",fontcolor="#384A52",fillcolor="#EFF2F5",shape=box,style=filled];
+  edge  [fontname="Arial",fontsize=9, color="#384A52",fontcolor="#384A52"];
+  "bwa_mem" [shape=box];
+  "decompress_fastq" [shape=box];
+  "decompress_genome" [shape=box];
+  "decompress_sam" [shape=box];
+  "download_fastq" [shape=box];
+  "download_genome" [shape=box];
+  "final" [shape=box];
+  "flagstat" [shape=box];
+  "freebayes" [shape=box];
+  "index" [shape=box];
+  "parse_result" [shape=box];
+  "sam_to_bam" [shape=box];
+  "bwa_mem" -> "decompress_sam" [taillabel="sam_gz", headlabel="sam_gz"];
+  "decompress_fastq" -> "bwa_mem" [taillabel="fastq", headlabel="fastq"];
+  "decompress_genome" -> "index" [taillabel="fna", headlabel="fna"];
+  "decompress_genome" -> "bwa_mem" [taillabel="fna", headlabel="fna"];
+  "decompress_genome" -> "freebayes" [taillabel="fna", headlabel="fna"];
+  "decompress_sam" -> "sam_to_bam" [taillabel="sam", headlabel="sam"];
+  "download_fastq" -> "decompress_fastq" [taillabel="fastq_gz", headlabel="fastq_gz"];
+  "download_genome" -> "decompress_genome" [taillabel="fna_gz", headlabel="fna_gz"];
+  "final" -> "freebayes" [taillabel="sorted_bam", headlabel="sorted_bam"];
+  "flagstat" -> "parse_result" [taillabel="stats", headlabel="stats"];
+  "parse_result" -> "freebayes" [taillabel="parse_out", headlabel="parse_out"];
+  "parse_result" -> "final" [taillabel="parse_out", headlabel="parse_out"];
+  "sam_to_bam" -> "flagstat" [taillabel="bam", headlabel="bam"];
+  "sam_to_bam" -> "final" [taillabel="bam", headlabel="bam"];
+}

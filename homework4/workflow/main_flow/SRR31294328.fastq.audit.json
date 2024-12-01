@@ -1,0 +1,27 @@
+{
+    "ID": "xhrbngy1asbs6kdhhbzg",
+    "ProcessName": "decompress_fastq",
+    "Command": "gzip -d -c ../SRR31294328.fastq.gz \u003e SRR31294328.fastq",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2024-11-30T23:21:26.877427+07:00",
+    "FinishTime": "2024-11-30T23:21:28.143482+07:00",
+    "ExecTimeNS": 1266059583,
+    "OutFiles": {
+        "fastq": "SRR31294328.fastq"
+    },
+    "Upstream": {
+        "SRR31294328.fastq.gz": {
+            "ID": "jmwk0lf5ih9d73hde64i",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

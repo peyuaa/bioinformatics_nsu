@@ -1,0 +1,243 @@
+{
+    "ID": "ce547hobqr4kc3ydraj4",
+    "ProcessName": "final",
+    "Command": "\nif (( $(echo \"$(cat ../parse_result.txt) \u003e= 90\" | bc -l) )); then\n\tsamtools sort ../aln-se.bam \u003e alignment.sorted.bam\nelse\n    echo \"Not OK\" \u003e alignment.sorted.bam\nfi",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2024-11-30T23:23:55.441003+07:00",
+    "FinishTime": "2024-11-30T23:23:55.452356+07:00",
+    "ExecTimeNS": 11353000,
+    "OutFiles": {
+        "sorted_bam": "alignment.sorted.bam"
+    },
+    "Upstream": {
+        "aln-se.bam": {
+            "ID": "qrrnxx93rqw6zp17hnoj",
+            "ProcessName": "sam_to_bam",
+            "Command": "samtools view -bS ../aln-se.sam \u003e aln-se.bam",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "2024-11-30T23:23:30.151124+07:00",
+            "FinishTime": "2024-11-30T23:23:54.184266+07:00",
+            "ExecTimeNS": 24033237375,
+            "OutFiles": {
+                "bam": "aln-se.bam"
+            },
+            "Upstream": {
+                "aln-se.sam": {
+                    "ID": "y8zdvciug5areim1d8pa",
+                    "ProcessName": "decompress_sam",
+                    "Command": "gzip -d -c ../aln-se.sam.gz \u003e aln-se.sam",
+                    "Params": {},
+                    "Tags": {},
+                    "StartTime": "2024-11-30T23:23:28.904137+07:00",
+                    "FinishTime": "2024-11-30T23:23:30.150364+07:00",
+                    "ExecTimeNS": 1246231958,
+                    "OutFiles": {
+                        "sam": "aln-se.sam"
+                    },
+                    "Upstream": {
+                        "aln-se.sam.gz": {
+                            "ID": "kyimyaoomgtq65z9mdwi",
+                            "ProcessName": "bwa_mem",
+                            "Command": "bwa mem ../GCF_000005845.2_ASM584v2_genomic.fna ../SRR31294328.fastq | gzip -3 \u003e aln-se.sam.gz",
+                            "Params": {},
+                            "Tags": {},
+                            "StartTime": "2024-11-30T23:21:29.093339+07:00",
+                            "FinishTime": "2024-11-30T23:23:28.903395+07:00",
+                            "ExecTimeNS": 119810529000,
+                            "OutFiles": {
+                                "sam_gz": "aln-se.sam.gz"
+                            },
+                            "Upstream": {
+                                "GCF_000005845.2_ASM584v2_genomic.fna": {
+                                    "ID": "4dgiqp7u6743ydwdhoqq",
+                                    "ProcessName": "decompress_genome",
+                                    "Command": "gzip -d -c ../GCF_000005845.2_ASM584v2_genomic.fna.gz \u003e GCF_000005845.2_ASM584v2_genomic.fna",
+                                    "Params": {},
+                                    "Tags": {},
+                                    "StartTime": "2024-11-30T23:21:26.850227+07:00",
+                                    "FinishTime": "2024-11-30T23:21:26.876522+07:00",
+                                    "ExecTimeNS": 26294875,
+                                    "OutFiles": {
+                                        "fna": "GCF_000005845.2_ASM584v2_genomic.fna"
+                                    },
+                                    "Upstream": {
+                                        "GCF_000005845.2_ASM584v2_genomic.fna.gz": {
+                                            "ID": "ujrmihro22zqnmmcwmrx",
+                                            "ProcessName": "",
+                                            "Command": "",
+                                            "Params": {},
+                                            "Tags": {},
+                                            "StartTime": "0001-01-01T00:00:00Z",
+                                            "FinishTime": "0001-01-01T00:00:00Z",
+                                            "ExecTimeNS": -1,
+                                            "OutFiles": {},
+                                            "Upstream": {}
+                                        }
+                                    }
+                                },
+                                "SRR31294328.fastq": {
+                                    "ID": "xhrbngy1asbs6kdhhbzg",
+                                    "ProcessName": "decompress_fastq",
+                                    "Command": "gzip -d -c ../SRR31294328.fastq.gz \u003e SRR31294328.fastq",
+                                    "Params": {},
+                                    "Tags": {},
+                                    "StartTime": "2024-11-30T23:21:26.877427+07:00",
+                                    "FinishTime": "2024-11-30T23:21:28.143482+07:00",
+                                    "ExecTimeNS": 1266059583,
+                                    "OutFiles": {
+                                        "fastq": "SRR31294328.fastq"
+                                    },
+                                    "Upstream": {
+                                        "SRR31294328.fastq.gz": {
+                                            "ID": "jmwk0lf5ih9d73hde64i",
+                                            "ProcessName": "",
+                                            "Command": "",
+                                            "Params": {},
+                                            "Tags": {},
+                                            "StartTime": "0001-01-01T00:00:00Z",
+                                            "FinishTime": "0001-01-01T00:00:00Z",
+                                            "ExecTimeNS": -1,
+                                            "OutFiles": {},
+                                            "Upstream": {}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "parse_result.txt": {
+            "ID": "fdfopcxi2qpcq54cni16",
+            "ProcessName": "parse_result",
+            "Command": "grep \"[0-9] mapped (\" ../samtools_result.txt | sed 's/^.*mapped/mapped/' | tr -d -c \"0-9.\" \u003e parse_result.txt",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "2024-11-30T23:23:55.429678+07:00",
+            "FinishTime": "2024-11-30T23:23:55.44015+07:00",
+            "ExecTimeNS": 10471834,
+            "OutFiles": {
+                "parse_out": "parse_result.txt"
+            },
+            "Upstream": {
+                "samtools_result.txt": {
+                    "ID": "xxvc8sanhvq253pul8a2",
+                    "ProcessName": "flagstat",
+                    "Command": "samtools flagstat ../aln-se.bam \u003e samtools_result.txt",
+                    "Params": {},
+                    "Tags": {},
+                    "StartTime": "2024-11-30T23:23:54.185004+07:00",
+                    "FinishTime": "2024-11-30T23:23:55.428914+07:00",
+                    "ExecTimeNS": 1243914916,
+                    "OutFiles": {
+                        "stats": "samtools_result.txt"
+                    },
+                    "Upstream": {
+                        "aln-se.bam": {
+                            "ID": "qrrnxx93rqw6zp17hnoj",
+                            "ProcessName": "sam_to_bam",
+                            "Command": "samtools view -bS ../aln-se.sam \u003e aln-se.bam",
+                            "Params": {},
+                            "Tags": {},
+                            "StartTime": "2024-11-30T23:23:30.151124+07:00",
+                            "FinishTime": "2024-11-30T23:23:54.184266+07:00",
+                            "ExecTimeNS": 24033237375,
+                            "OutFiles": {
+                                "bam": "aln-se.bam"
+                            },
+                            "Upstream": {
+                                "aln-se.sam": {
+                                    "ID": "y8zdvciug5areim1d8pa",
+                                    "ProcessName": "decompress_sam",
+                                    "Command": "gzip -d -c ../aln-se.sam.gz \u003e aln-se.sam",
+                                    "Params": {},
+                                    "Tags": {},
+                                    "StartTime": "2024-11-30T23:23:28.904137+07:00",
+                                    "FinishTime": "2024-11-30T23:23:30.150364+07:00",
+                                    "ExecTimeNS": 1246231958,
+                                    "OutFiles": {
+                                        "sam": "aln-se.sam"
+                                    },
+                                    "Upstream": {
+                                        "aln-se.sam.gz": {
+                                            "ID": "kyimyaoomgtq65z9mdwi",
+                                            "ProcessName": "bwa_mem",
+                                            "Command": "bwa mem ../GCF_000005845.2_ASM584v2_genomic.fna ../SRR31294328.fastq | gzip -3 \u003e aln-se.sam.gz",
+                                            "Params": {},
+                                            "Tags": {},
+                                            "StartTime": "2024-11-30T23:21:29.093339+07:00",
+                                            "FinishTime": "2024-11-30T23:23:28.903395+07:00",
+                                            "ExecTimeNS": 119810529000,
+                                            "OutFiles": {
+                                                "sam_gz": "aln-se.sam.gz"
+                                            },
+                                            "Upstream": {
+                                                "GCF_000005845.2_ASM584v2_genomic.fna": {
+                                                    "ID": "4dgiqp7u6743ydwdhoqq",
+                                                    "ProcessName": "decompress_genome",
+                                                    "Command": "gzip -d -c ../GCF_000005845.2_ASM584v2_genomic.fna.gz \u003e GCF_000005845.2_ASM584v2_genomic.fna",
+                                                    "Params": {},
+                                                    "Tags": {},
+                                                    "StartTime": "2024-11-30T23:21:26.850227+07:00",
+                                                    "FinishTime": "2024-11-30T23:21:26.876522+07:00",
+                                                    "ExecTimeNS": 26294875,
+                                                    "OutFiles": {
+                                                        "fna": "GCF_000005845.2_ASM584v2_genomic.fna"
+                                                    },
+                                                    "Upstream": {
+                                                        "GCF_000005845.2_ASM584v2_genomic.fna.gz": {
+                                                            "ID": "ujrmihro22zqnmmcwmrx",
+                                                            "ProcessName": "",
+                                                            "Command": "",
+                                                            "Params": {},
+                                                            "Tags": {},
+                                                            "StartTime": "0001-01-01T00:00:00Z",
+                                                            "FinishTime": "0001-01-01T00:00:00Z",
+                                                            "ExecTimeNS": -1,
+                                                            "OutFiles": {},
+                                                            "Upstream": {}
+                                                        }
+                                                    }
+                                                },
+                                                "SRR31294328.fastq": {
+                                                    "ID": "xhrbngy1asbs6kdhhbzg",
+                                                    "ProcessName": "decompress_fastq",
+                                                    "Command": "gzip -d -c ../SRR31294328.fastq.gz \u003e SRR31294328.fastq",
+                                                    "Params": {},
+                                                    "Tags": {},
+                                                    "StartTime": "2024-11-30T23:21:26.877427+07:00",
+                                                    "FinishTime": "2024-11-30T23:21:28.143482+07:00",
+                                                    "ExecTimeNS": 1266059583,
+                                                    "OutFiles": {
+                                                        "fastq": "SRR31294328.fastq"
+                                                    },
+                                                    "Upstream": {
+                                                        "SRR31294328.fastq.gz": {
+                                                            "ID": "jmwk0lf5ih9d73hde64i",
+                                                            "ProcessName": "",
+                                                            "Command": "",
+                                                            "Params": {},
+                                                            "Tags": {},
+                                                            "StartTime": "0001-01-01T00:00:00Z",
+                                                            "FinishTime": "0001-01-01T00:00:00Z",
+                                                            "ExecTimeNS": -1,
+                                                            "OutFiles": {},
+                                                            "Upstream": {}
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "ID": "gll1t1wqsf89bj09utou",
+    "ProcessName": "index",
+    "Command": "bwa index ../GCF_000005845.2_ASM584v2_genomic.fna \u0026\u0026 touch stub.txt",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2024-11-30T23:21:28.144085+07:00",
+    "FinishTime": "2024-11-30T23:21:29.092789+07:00",
+    "ExecTimeNS": 948707209,
+    "OutFiles": {
+        "stub": "stub.txt"
+    },
+    "Upstream": {
+        "GCF_000005845.2_ASM584v2_genomic.fna": {
+            "ID": "4dgiqp7u6743ydwdhoqq",
+            "ProcessName": "decompress_genome",
+            "Command": "gzip -d -c ../GCF_000005845.2_ASM584v2_genomic.fna.gz \u003e GCF_000005845.2_ASM584v2_genomic.fna",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "2024-11-30T23:21:26.850227+07:00",
+            "FinishTime": "2024-11-30T23:21:26.876522+07:00",
+            "ExecTimeNS": 26294875,
+            "OutFiles": {
+                "fna": "GCF_000005845.2_ASM584v2_genomic.fna"
+            },
+            "Upstream": {
+                "GCF_000005845.2_ASM584v2_genomic.fna.gz": {
+                    "ID": "ujrmihro22zqnmmcwmrx",
+                    "ProcessName": "",
+                    "Command": "",
+                    "Params": {},
+                    "Tags": {},
+                    "StartTime": "0001-01-01T00:00:00Z",
+                    "FinishTime": "0001-01-01T00:00:00Z",
+                    "ExecTimeNS": -1,
+                    "OutFiles": {},
+                    "Upstream": {}
+                }
+            }
+        }
+    }
+}
