@@ -30,3 +30,8 @@ MKGMLTGPVTILNWSWPREDITHEEQTKQLALAIRDEVLDLEAAGIKIIQIDEAALREKLPLRKSDWHAKYLDWAIPAFR
 Так же результаты можно посмотреть в директории alignment_results
 
 ![Визуализация 1](alignment_results/molstar-image.png)
+
+# Вывод
+
+RMSD составляет 0.73, что указывает на очень малое отклонение между моделями.
+TM-score равен 0.97, что близко к 1. Identity = 100%. Это указывает на практически идеальное совпадение.
