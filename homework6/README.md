@@ -27,13 +27,13 @@
 
 ## Ноутбуки с вычислениями
 
-Локально в файле: homework6_Krasnov_21215.ipynb
+Локально в файле: [homework6_Krasnov_21215.ipynb](https://github.com/peyuaa/bioinformatics_nsu/blob/main/homework6/homework6_Krasnov_21215.ipynb)
 
 Google Collab: https://colab.research.google.com/drive/1YWo9SaQyCb015qTm_OU4e4Pq4ZGIjLPp?usp=sharing
 
 ## Полученный результат докинга
 
-Находится в DOCKING/6WV3
+Находится в [DOCKING/6WV3](https://github.com/peyuaa/bioinformatics_nsu/tree/main/homework6/DOCKING/6WV3)
 
 ## Изображения
 
