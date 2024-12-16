@@ -12,3 +12,13 @@ MKGMLTGPVTILNWSWPREDITHEEQTKQLALAIRDEVLDLEAAGIKIIQIDEAALREKLPLRKSDWHAKYLDWAIPAFR
 
 ![Визуализация 1](prediction_RoseTTAFold2/1.png)
 ![Визуализация 2](prediction_RoseTTAFold2/2.png)
+
+## OpenFold
+
+Результаты в prediction_OpenFold/selected_prediction.pdb
+
+Ноутбук - prediction_OpenFold/OpenFold_Krasnov_21215.ipynb
+
+![Визуализация 1](prediction_OpenFold/1.png)
+![Визуализация 2](prediction_OpenFold/2.png)
+![Визуализация 3](prediction_OpenFold/3.png)
